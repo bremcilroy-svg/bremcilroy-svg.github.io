@@ -108,14 +108,17 @@
       max-width: 530px;
     }
 
-    .portrait {
-      width: 100%;
-      height: 560px;
-      object-fit: cover;
-      object-position: center 35%;
-      border-radius: 3px;
-      border: 1px solid #666;
-    }
+    
+.portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 4px;
+}
+
 
     .portrait-frame {
       position: relative;
@@ -130,15 +133,17 @@
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
 }
 
+
 .portrait {
   display: block;
   width: 100%;
-  height: 560px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 35%;
-  border: none;
+  object-position: center 30%;
   border-radius: 4px;
 }
+
 
 @media (max-width: 800px) {
   .portrait {
