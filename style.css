@@ -252,3 +252,123 @@ c,,,,,,,     , :root {
         font-size: 34px;
       }
     }
+
+/* ===================================
+   WRITING & MUSIC COLLECTION
+=================================== */
+
+.writing-collection {
+  background: #111113;
+  color: #ffffff;
+  padding: 100px 8%;
+}
+
+.collection-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 55px;
+}
+
+.collection-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 5vw, 58px);
+  margin: 15px 0 20px;
+  font-weight: 500;
+}
+
+.collection-heading > p:last-child {
+  color: #c9c5c5;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.writing-card {
+  position: relative;
+  background: #1b1b1f;
+  border: 1px solid #38383d;
+  padding: 42px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.writing-card:hover {
+  transform: translateY(-7px);
+  border-color: #a51f36;
+  box-shadow: 0 15px 35px
+              rgba(0, 0, 0, 0.3);
+}
+
+.category-number {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  color: #c44960;
+  font-style: italic;
+}
+
+.writing-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 22px 0 12px;
+}
+
+.writing-card p {
+  color: #c9c5c5;
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 25px;
+}
+
+.category-label {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid #454047;
+  color: #e2a0ad;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .writing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .writing-collection {
+    padding: 65px 7%;
+  }
+
+  .writing-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .writing-card {
+    min-height: 260px;
+    padding: 30px 25px;
+  }
+
+  .collection-heading {
+    margin-bottom: 35px;
+  }
+}
