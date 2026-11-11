@@ -372,3 +372,32 @@ c,,,,,,,     , :root {
     margin-bottom: 35px;
   }
 }
+/* BOOK COVER PRESENTATION */
+
+.book-cover-section {
+  background: #111113;
+  padding: 65px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-cover {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border: 1px solid #a51f36;
+  border-radius: 4px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.55);
+}
+
+@media (max-width: 650px) {
+  .book-cover-section {
+    padding: 35px 22px;
+  }
+
+  .book-cover {
+    max-width: 310px;
+  }
+}
