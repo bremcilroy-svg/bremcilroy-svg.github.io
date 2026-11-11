@@ -33,7 +33,11 @@ This package does not alter GitHub Pages settings. If your site already publishe
 - The Releasing Myself publication listing uses information previously supplied by the author: Unseal Your Best Life: Poems Revealing Past, Present, and Perfect Moments; compiled by Lauren Brill; pages 206–207. Supply publication images and the poem if you want a reading sample.
 - Add only the poems you select from the unpublished manuscript. No full manuscript or poem text is included.
 - Supply photographs, performance credits, artwork, and project links for the collections marked in progress.
-- Song titles are listed as songwriting projects; there are no audio players or recordings in this package.
+- Music is now featured on music.html, with all 13 titles, individual song pages, and complete lyrics for all 13 songs. The music links open the Spotify artist profile; no track-specific URLs or audio embeds have been invented.
+- All 13 songs now include full original lyrics. Something Wrong With Me uses the author-corrected version beginning “I watch the door close, one more time.” The rejected version beginning “You said forever, but you packed light” is not used.
+- Passenger Inside My Skin uses the title on the author’s lyric submission. A previously described Spotify screenshot used Passenger In My Own Skin; the release-title difference has not been silently resolved.
+- Collection order follows the submissions and is not presented as a verified Spotify track order.
+- The only word-wrap repair in lyric content joins the split word “loud” + “er” in My Mind Is Over Crowded. Formatting-only blank spaces and Markdown transport characters are omitted; lyric wording and repeated sections are preserved.
 
 ## What changed
 
@@ -48,4 +52,21 @@ This package does not alter GitHub Pages settings. If your site already publishe
 
 ## Validation
 
-Twelve HTML pages and 198 local page, fragment, stylesheet, script, image, and icon references checked. Desktop layouts, 390-pixel phone layouts, and the Writing & Music-to-book navigation were reviewed in a browser. Deployment to your GitHub repository has not been performed.
+Twenty-six HTML pages and 460 local page, fragment, stylesheet, script, image, and icon references checked. All 13 complete lyric texts were compared against their rendered HTML content, ignoring formatting whitespace. JavaScript syntax was checked. Desktop and 320/390-pixel phone layouts were reviewed. Browser tests confirmed theme search, an empty result, Clear restoring all 13 entries, and song navigation. Deployment to your GitHub repository has not been performed.
+
+
+## Music update
+
+- music.html: A Siren’s Freedom collection with title/theme search.
+- song-*.html: Thirteen individual song pages, all containing full lyrics.
+- site.js: Accessible search filtering and the existing print buttons.
+- style.css: Responsive collection and lyric-page styles.
+- Homepage, writing page, and shared navigation now link to Music.
+- Credits distinguish lyrics written by Bre McIlroy from music and vocals created with AI.
+
+For this update, upload all extracted files again so the shared styles, scripts, and navigation update together. No package installation or build step is required.
+
+
+## Completed lyrics update
+
+Added the author’s corrected Something Wrong With Me lyrics and the complete I’m Learning to Fly submission. Removed pending-lyrics notices and updated both collection pages to show all 13 full texts. Original wording, punctuation, repetitions, and submitted section labels are retained. The new lyrics do not add invented verse or chorus labels.
